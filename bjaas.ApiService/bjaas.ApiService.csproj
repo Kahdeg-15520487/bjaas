@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\bjaas.ServiceDefaults\bjaas.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\bjaas.Shared\bjaas.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Business\Blackjack\Models\" />
+    <Folder Include="Business\Blackjack\Services\" />
+    <Folder Include="Business\Users\Controllers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.2.2" />
+    <PackageReference Include="BitzArt.Blazor.Auth.Server" Version="1.0.2" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BitzArt.Blazor.Auth.Client" Version="1.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\bjaas.ServiceDefaults\bjaas.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\bjaas.Shared\bjaas.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
